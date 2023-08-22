@@ -4,7 +4,7 @@ currentIdx = 0;
 slideCount = slideImg.length;
 prev = document.querySelector('.prev'); //이전 버튼
 next = document.querySelector('.next'); //다음 버튼
-slideWidth = 800; //슬라이드 이미지 넓이
+slideWidth = 300; //슬라이드이미지 넓이
 slideMargin = 100; //슬라이드 끼리의 마진값
 makeClone(); // 처음이미지와 마지막 이미지 복사 함수
 initfunction(); //슬라이드 넓이와 위치값 초기화 함수
@@ -52,10 +52,3 @@ prev.addEventListener('click', function () {
   }
   currentIdx -= 1;
 });
-
-
-
-
-
-
-
