@@ -7,8 +7,16 @@ def main_page(request):
 
 def about_page(request):
     main_page = wedding.objects.all()
-    return render(request, "about_page.html", { "about_page": main_page} )
+    return render(request, "about_page.html", { "about_page": about_page} )
+
+def reservation_page(request):
+    main_page = wedding.objects.all()
+    return render(request, "reservation_page.html", { "reservation_page": reservation_page} )
 
 def Nonhyeon_page(request):
     main_page = wedding.objects.all()
     return render(request, "Nonhyeon_page.html", { "Nonhyeon_page": Nonhyeon_page} )
+
+def Samsung_page(request):
+    main_page = wedding.objects.all()
+    return render(request, "Samsung_page.html", { "samsung_page": Samsung_page} )
