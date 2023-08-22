@@ -5,6 +5,10 @@ def main_page(request):
     main_page = wedding.objects.all()
     return render(request, "main_page.html", { "main_page": main_page} )
 
+def about_page(request):
+    main_page = wedding.objects.all()
+    return render(request, "about_page.html", { "about_page": about_page} )
+
 def Nonhyeon_page(request):
     main_page = wedding.objects.all()
     return render(request, "Nonhyeon_page.html", { "Nonhyeon_page": Nonhyeon_page} )
