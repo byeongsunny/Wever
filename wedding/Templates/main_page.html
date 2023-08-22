@@ -18,23 +18,21 @@
         <!-- Navigation : 네비게이션 바!-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light pb-3">
             <div class="container px-4 px-lg-5 mt-3">
-                <a class="navbar-brand" href="/">Wever</a>
+                <a class="navbar-brand" href="{% url 'wedding_urls' %}">Wever</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-20">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about">About</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'wedding_urls' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Tour</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Reservation</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'reservation_page' %}">Reservation</a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">지역</a>
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="{% url 'wedding_urls' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">강남</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="/">강남</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="non">논현</a></li>
+                                <li><a class="dropdown-item" href="{% url 'non_page' %}">논현</a></li>
                                 <li><a class="dropdown-item" href="#!">청담</a></li>
                                 <li><a class="dropdown-item" href="#!">신사</a></li>
-                                <li><a class="dropdown-item" href="#!">삼성</a></li>
+                                <li><a class="dropdown-item" href="{% url 'sam_page' %}">삼성</a></li>
                                 <li><a class="dropdown-item" href="#!">기타</a></li>
                             </ul>
                         </li>

@@ -60,10 +60,10 @@
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
-  --bs-body-line-height: 1.5;
+  --bs-body-line-height: 3;
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
-  --bs-border-width: 1px;
+  --bs-border-width:1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
@@ -103,10 +103,11 @@ body {
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-span_b {
-    font-family: 'IBM Plex Sans KR', sans-serif;
-    font-family: 'Noto Serif KR', serif;
-    color: #D1D8D6;
+
+div_re {
+    color: white;
+    font-size: 1rem;
+
 }
 
 hr {
