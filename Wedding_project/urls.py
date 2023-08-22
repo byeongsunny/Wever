@@ -25,4 +25,6 @@ urlpatterns = [
     path("res", views.reservation_page, name="reservation_page"),
     path("non", views.Nonhyeon_page, name="non_page"),
     path("sam", views.Samsung_page, name="sam_page"),
+    path("sin", views.Sinsa_page, name="sin_page"),
+    path("chu", views.Chungdam_page, name="chu_page"),
 ]

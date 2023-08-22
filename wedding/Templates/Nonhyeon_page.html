@@ -24,16 +24,14 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-20">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'main_page' %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href= "about">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Tour</a></li>
                         <li class="nav-item"><a class="nav-link" href="res">Reservation</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">논현</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="non">논현</a></li>
-                                <li><a class="dropdown-item" href="#!">청담</a></li>
-                                <li><a class="dropdown-item" href="#!">신사</a></li>
+                                <li><a class="dropdown-item" href="chu">청담</a></li>
+                                <li><a class="dropdown-item" href="sin">신사</a></li>
                                 <li><a class="dropdown-item" href="sam">삼성</a></li>
-                                <li><a class="dropdown-item" href="#!">기타</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -54,7 +52,7 @@
                     <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://img.vogue.co.kr/vogue/2022/08/style_62ecb24f1f599-744x930.jpeg" alt="..." /></div>
                     <div class="col-md-6">
                         <div class="small mb-1">강남구 빈지노로 123-456</div>
-                        <h1 class="display-5 fw-bolder">최고최고 웨딩홀</h1>
+                        <h1 class="display-5 fw-bolder">논현 웨딩홀</h1>
                         <div class="fs-5 mb-5">
                             <span class="text-decoration-line-through">$45.00</span>
                             <span>$40.00</span>
@@ -93,14 +91,12 @@
         <!-- 이미지 슬라이드-->
              <div id="slideShow">
                 <ul class="slides">
-                    {% for _ in '0000' %}
                       <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
                       <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
                       <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
                       <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
                       <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
                      <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                    {% endfor %}
                 </ul>
                     <p class="controller">
                           <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->

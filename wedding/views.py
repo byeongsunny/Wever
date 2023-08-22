@@ -20,3 +20,11 @@ def Nonhyeon_page(request):
 def Samsung_page(request):
     main_page = wedding.objects.all()
     return render(request, "Samsung_page.html", { "samsung_page": Samsung_page} )
+
+def Sinsa_page(request):
+    main_page = wedding.objects.all()
+    return render(request, "Sinsa_page.html", { "sinsa_page": Sinsa_page} )
+
+def Chungdam_page(request):
+    main_page = wedding.objects.all()
+    return render(request, "Chungdam_page.html", { "chungdam_page": Chungdam_page} )
