@@ -21,5 +21,6 @@ from wedding import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.main_page, name="main_page"),
+    path("about", views.about_page, name="about_page"),
     path("non", views.Nonhyeon_page, name="Nonheyon_page"),
 ]
