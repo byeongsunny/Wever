@@ -68,33 +68,30 @@
                             <h2>Reservation</h2>
                         </center>
                       <form action="write.jsp" method="post">
-                        <div class="form-group">
-                          <label for="title">이름</label>
-                          <input type="text" class="form-control" id="title"
-                           placeholder="제목 입력(4-20)" name="title"
-                           maxlength="20" required="required"
-                           pattern=".{4,100}">
-                        </div>
-
-                      <div class="form-group">
-                          <label for="writer">전화번호</label>
-                          <input type="text" class="form-control" id="writer"
-                           placeholder="전화번호" name="writer">
-                      </div>
-
-
-                        <div class="form-group">
-                       <label for="content">내용</label>
-                       <textarea class="form-control" rows="5" id="content"
-                        name="content"
-                     placeholder="방문 예정 지점 및 문의 내용을 적어주시면 상담의 큰 도움이 됩니다."></textarea>
-                     </div>
+                          {% csrf_token %}
+                          <div class="form-group">
+                            <label for="title">이름</label>
+                            <input type="text" class="form-control" id="title"
+                            placeholder="성 함" name="title"
+                            maxlength="20" required="required"
+                            pattern=".{2,100}">
+                          </div>
+                          <div class="form-group">
+                            <label for="writer">전화번호</label>
+                            <input type="text" class="form-control" id="writer"
+                                   placeholder="전화번호" name="writer">
+                          </div>
+                          <div class="form-group">
+                              <label for="content">내용</label>
+                              <textarea class="form-control" rows="5" id="content" name="content"
+                                        placeholder="방문 예정 지점 및 문의 내용을 적어주시면 상담의 큰 도움이 됩니다.">
+                              </textarea>
+                          </div>
                           <br>
-                        <button type="submit" class="btn btn-secondary" style="float : right">등록</button>
+                          <button type="submit" class="btn btn-secondary" style="float : right">등록</button>
                       </form>
                         <br>
                     </div>
-                </div>
             </div_re>
 
 
