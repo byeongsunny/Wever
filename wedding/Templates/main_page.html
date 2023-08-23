@@ -24,7 +24,6 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-20">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'wedding_urls' %}">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Tour</a></li>
                         <li class="nav-item"><a class="nav-link" href="{% url 'reservation_page' %}">Reservation</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="{% url 'wedding_urls' %}" role="button" data-bs-toggle="dropdown" aria-expanded="false">강남</a>
@@ -33,10 +32,10 @@
                                 <li><a class="dropdown-item" href="{% url 'chu_page' %}">청담</a></li>
                                 <li><a class="dropdown-item" href="{% url 'sin_page' %}">신사</a></li>
                                 <li><a class="dropdown-item" href="{% url 'sam_page' %}">삼성</a></li>
-                                <li><a class="dropdown-item" href="#!">기타</a></li>
                             </ul>
                         </li>
                     </ul>
+                    <img src="static/assets/wever_main_logo.png" style="width:140px; height:60px;"/></img>
                     <form class="d-flex">
                       <button class="btn btn">
                           <a class="fa-brands fa-instagram fa-2xl" style="color: #000000;"
@@ -54,8 +53,8 @@
                     <header class="bg-dark py-5">
                         <div class="container px-4 px-lg-5 my-5">
                             <div class="text-center text-white">
-                                <h1 class="display-4 fw-bolder">WEDDING + NAVER = WEVER</h1>
-                                <p class="lead fw-normal text-white-50 mb-0">결혼식 사이트~ 몇줄까지 쓸수 있나 함 써보자
+                                <h1 class="display-4 fw-bolder">WEVER</h1>
+                                <p class="lead fw-normal text-white-50 mb-0">Nonheyon | Chungdam | Samsung | Sinsa
                                     </p>
                             </div>
                         </div>
@@ -72,14 +71,14 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">논현</h5>
+                                    <h5 class="fw-bolder">논현 | Nonheyon</h5>
                                     <!-- Product price-->
                                     $40.00 - $80.00
                                 </div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">방문 예약하기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'non_page' %}">View</a></div>
                             </div>
                         </div>
                     </div>
@@ -93,7 +92,7 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">청담</h5>
+                                    <h5 class="fw-bolder">청담 | Chungdam</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -109,7 +108,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'chu_page' %}">View</a></div>
                             </div>
                         </div>
                     </div>
@@ -123,7 +122,7 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">신사</h5>
+                                    <h5 class="fw-bolder">신사 | Sinsa</h5>
                                     <!-- Product price-->
                                     <span class="text-muted text-decoration-line-through">$50.00</span>
                                     $25.00
@@ -131,7 +130,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'sin_page' %}">View</a></div>
                             </div>
                         </div>
                     </div>
@@ -143,7 +142,7 @@
                             <div class="card-body p-4">
                                 <div class="text-center">
                                     <!-- Product name-->
-                                    <h5 class="fw-bolder">삼성</h5>
+                                    <h5 class="fw-bolder">삼성 | Samsung</h5>
                                     <!-- Product reviews-->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -158,7 +157,7 @@
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">방문예약하기</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'sam_page' %}">View</a></div>
                             </div>
                         </div>
                     </div>
