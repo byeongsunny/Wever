@@ -18,35 +18,7 @@
         <!-- Navigation-->
         <!-- Navigation : 네비게이션 바!-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="{% url 'wedding_urls' %}">Wever</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-20">
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'wedding_urls' %}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{% url 'reservation_page' %}">Reservation</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">신사</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="{% url 'non_page' %}">논현</a></li>
-                                <li><a class="dropdown-item" href="{% url 'chu_page' %}">청담</a></li>
-                                <li><a class="dropdown-item" href="{% url 'sin_page' %}">신사</a></li>
-                                <li><a class="dropdown-item" href="{% url 'sam_page' %}">삼성</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <button class="btn btn" type="submit">
-                            <a class="fa-brands fa-instagram fa-2xl" style="color: #000000;"
-                                 href="https://instagram.com/byeongsunny_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" >
-                            </a>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </nav>
+        {% include "navbar.html" %}
         <!-- Product section-->
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
@@ -354,7 +326,9 @@
 
 
         <!-- Footer-->
+           {% include "footer.html" %}
+        <!-- Core theme JS-->
+        <!-- 기능을 몰라 일단 주석처리합니다 -->
         <script src="js/scripts.js"></script>
-{% include "footer.html" %}
     </body>
 </html>
