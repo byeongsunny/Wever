@@ -37,4 +37,10 @@ def Samsung_page(request):
     main_pages = wedding.objects.all()
     return render(request, "Samsung_page.html", { "samsung_page": main_pages} )
 
+def Chungdam_page(request):
+    main_pages = wedding.objects.all()
+    return render(request, "Chungdam_page.html", { "Chungdam_page": main_pages} )
 
+def Sinsa_page(request):
+    main_pages = wedding.objects.all()
+    return render(request, "Sinsa_page.html", { "Sinsa_page": main_pages} )
