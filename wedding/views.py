@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from.models import wedding,CheongdamDong,Gangnam,NonhyeonDong,SamseongDong,SinsaDong
+from.models import wedding,CheongdamDong,Gangnam,NonhyeonDong,SamsungDong,SinsaDong
 from .forms import WeddingForm
 from django.core.mail import EmailMessage
+from django.core.paginator import  Paginator
 
 def main_page(request):
     main_pages = Gangnam.objects.all()
@@ -29,17 +30,21 @@ def reservation_page(request):
 
 
 def Nonhyeon_page(request):
-    main_pages = NonhyeonDong.objects.all()
-    return render(request, "Nonhyeon_page.html", { "Nonhyeon_page": main_pages} )
+    nonhyeon = NonhyeonDong.objects.all()
+    return render(request, "Nonhyeon_page.html", { "nonhyeon": nonhyeon} )
+    page = request.GET.get("page")
+
+
 
 def Samsung_page(request):
-    main_pages = SamseongDong.objects.all()
-    return render(request, "Samsung_page.html", { "samsung_page": main_pages} )
+    samsung_page = SamsungDong.objects.all()
+    return render(request, "Samsung_page.html", { "samsung": samsung_page} )
 
 def Chungdam_page(request):
-    main_pages = CheongdamDong.objects.all()
-    return render(request, "Chungdam_page.html", { "Chungdam_page": main_pages} )
+    chungdam = CheongdamDong.objects.all()
+    return render(request, "Chungdam_page.html", { "chungdam": chungdam} )
 
 def Sinsa_page(request):
-    main_pages = SinsaDong.objects.all()
-    return render(request, "Sinsa_page.html", { "Sinsa_page": main_pages} )
+    sinsa = SinsaDong.objects.all()
+    return render(request, "Sinsa_page.html", { "sinsa": sinsa} )
+
