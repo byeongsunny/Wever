@@ -311,7 +311,7 @@
                                     <th>Phone</th>
                                 </tr>
                             </thead>
-                            {% for i in chungdam %}
+                            {% for i in chungdam_page_obj %}
                             <thead>
                                 <tr>
                                     <th>{{ i.column1 }}</th>
@@ -327,10 +327,48 @@
                                 </tr>
                             </thead>
                             {% endfor %}
-
                         </table>
                     </div>
                 </div>
+                <!-- 페이지네이션 -->
+                <ul class="pagination pagination-lg justify-content-center">
+                    <!--이전페이지 존재한다면-->
+                    {% if chungdam_page_obj.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ chungdam_page_obj.previous_page_number}}" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link" tabindex="-1" href="#">&laquo;</a>
+                    </li>
+                    {% endif %}
+                    <!--페이지리스트-->
+                    <!--페이지 범위를 하나씩 리턴-->
+                    {% for data in chungdam_page_obj.paginator.page_range %}
+                        <!-- paginated_chungdam_lists의 페이지 범위와 현재 페이지 숫자가 같다면 -->
+                        {% if data == chungdam_page_obj.number %}
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="?page={{ data }}">{{ data }}</a>
+                        </li>
+                        {% else %}
+                        <li class="page-item">
+                            <a class="page-link" href="?page={{ data }}">{{ data }}</a>
+                        </li>
+                        {% endif %}
+                    {% endfor %}
+                    <!--다음페이지-->
+                    {% if chungdam_page_obj.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ chungdam_page_obj.next_page_number }}">&raquo;</a>
+                    </li>
+                    {% else %}
+                    <li class="page-item disabled">
+                        <a class="page-link" tabindex="-1" href="#">&raquo;</a>
+                    </li>
+                    {% endif %}
+                </ul>
             </div>
         </main>
 

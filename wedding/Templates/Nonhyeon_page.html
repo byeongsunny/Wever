@@ -315,7 +315,7 @@
 							<th>Phone</th>
 						</tr>
 					</thead>
-                    {% for i in nonhyeon %}
+                    {% for i in nonhyeon_page_obj %}
                     <thead>
                         <tr>
                             <th>{{ i.column1 }}</th>
@@ -336,27 +336,47 @@
 				</table>
 			</div>
 		</div>
-        <nav aria-label="Page navigation example">
-          <ul class="pagination pagination-lg justify-content-center">
+        <!-- 페이지네이션 -->
+        <ul class="pagination pagination-lg justify-content-center">
+            <!--이전페이지 존재한다면-->
+            {% if nonhyeon_page_obj.has_previous %}
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Previous">
-                <span aria-hidden="true">&laquo;</span>
-              </a>
+                <a class="page-link" href="?page={{ nonhyeon_page_obj.previous_page_number}}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
             </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" tabindex="-1" href="#">&laquo;</a>
+            </li>
+            {% endif %}
+            <!--페이지리스트-->
+            <!--페이지 범위를 하나씩 리턴-->
+            {% for data in nonhyeon_page_obj.paginator.page_range %}
+                <!-- nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 -->
+                {% if data == nonhyeon_page_obj.number %}
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>
+                </li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            <!--다음페이지-->
+            {% if nonhyeon_page_obj.has_next %}
             <li class="page-item">
-              <a class="page-link" href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-              </a>
+                <a class="page-link" href="?page={{ nonhyeon_page_obj.next_page_number }}">&raquo;</a>
             </li>
-          </ul>
-        </nav>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" tabindex="-1" href="#">&raquo;</a>
+            </li>
+            {% endif %}
+        </ul>
 	</div>
 	</main>
-
-
         <!-- Footer-->
            {% include "footer.html" %}
         <!-- 어떤 기능을 하는지 몰라서 일단 주석처리했습니다-->
