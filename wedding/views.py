@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from.models import wedding
+from.models import wedding,CheongdamDong,Gangnam,NonhyeonDong,SamseongDong,SinsaDong
 from .forms import WeddingForm
 from django.core.mail import EmailMessage
 
-
 def main_page(request):
-    main_pages = wedding.objects.all()
+    main_pages = Gangnam.objects.all()
     return render(request, "main_page.html", {"main_pages": main_pages} )
 
 def about_page(request):
@@ -30,17 +29,17 @@ def reservation_page(request):
 
 
 def Nonhyeon_page(request):
-    main_pages = wedding.objects.all()
+    main_pages = NonhyeonDong.objects.all()
     return render(request, "Nonhyeon_page.html", { "Nonhyeon_page": main_pages} )
 
 def Samsung_page(request):
-    main_pages = wedding.objects.all()
+    main_pages = SamseongDong.objects.all()
     return render(request, "Samsung_page.html", { "samsung_page": main_pages} )
 
 def Chungdam_page(request):
-    main_pages = wedding.objects.all()
+    main_pages = CheongdamDong.objects.all()
     return render(request, "Chungdam_page.html", { "Chungdam_page": main_pages} )
 
 def Sinsa_page(request):
-    main_pages = wedding.objects.all()
+    main_pages = SinsaDong.objects.all()
     return render(request, "Sinsa_page.html", { "Sinsa_page": main_pages} )
