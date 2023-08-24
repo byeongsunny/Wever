@@ -52,12 +52,35 @@
                                <label for="content">내용</label>
                                <textarea class="form-control" rows="5" id="content"
                                 name="content" placeholder="방문 예정 지점 및 문의 내용을 적어주시면 상담의 큰 도움이 됩니다."></textarea>
-                        </div> <br>
-                        <button type="submit" class="btn btn-secondary" style="float : right">등록</button>
+                        </div>
+                        <br>
+                        <!-- Button trigger modal -->
+                        <button type="submit" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float : right">등록</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title text-center link-dark" id="staticBackdropLabel">웨이버</h5> <!-- link-dark 를 안넣어주면 글자가 투명으로 출력됨 -->
+                              </div>
+                              <div class="modal-body">
+                                  <p class="modal-decription link-dark">
+                                      문의해주셔서 감사합니다!
+                                      <br/>
+                                      빠른 시일 내에 연락드리겠습니다!
+                                  </p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                   </form>
                         <br>
                     </div>
                 </div_re>
+
             <!-- Footer-->
             {% include "footer.html" %}
         </body>
