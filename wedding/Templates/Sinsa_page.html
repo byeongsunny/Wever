@@ -315,9 +315,24 @@
                                     <th>Name</th>
                                     <th>Addr</th>
                                     <th>Phone</th>
-                                    <th>Event</th>
                                 </tr>
                             </thead>
+                            {% for i in sinsa %}
+                            <tbody>
+                                <tr>
+                                    <th>{{ i.column1 }}</th>
+                                    <th>
+                                        {% if i.urls != "#none" %}
+                                        <a href ="{{ i.urls }}">{{ i.name }}</a>
+                                        {% else %}
+                                        <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>
+                                        {% endif %}
+                                    </th>
+                                    <th>{{ i.addr1 }}</th>
+                                    <th>{{ i.tel }}</th>
+                                </tr>
+                            </tbody>
+                            {% endfor %}
                         </table>
                     </div>
                 </div>
