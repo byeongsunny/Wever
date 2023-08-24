@@ -11,8 +11,8 @@
 }
 .mySlides {
     border-radius:3%;
-    width: 600px;
-    height: 350px;
+    width: 2500px;
+    height: 800px;
     display: flex;
     justify-content: center;
     align-items: center;

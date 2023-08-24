@@ -39,6 +39,8 @@ next.addEventListener('click', function () {
 prev.addEventListener('click', function () {
   //이전 버튼 눌렀을때
   console.log(currentIdx);
+
+
   if (currentIdx >= 0) {
     slides.style.left = -currentIdx * (slideWidth + slideMargin) + 'px';
     slides.style.transition = `${0.5}s ease-out`;
