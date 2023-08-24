@@ -20,7 +20,7 @@ class wedding(models.Model):
 
 
 class CheongdamDong(models.Model):
-    column1 = models.IntegerField(db_column='Column1', blank=True, null=True)  # Field name made lowercase.
+    column1 = models.IntegerField(db_column='Column1', blank=True, primary_key=True)  # Field name made lowercase.
     name = models.CharField(max_length=50, blank=True, null=True)
     addr1 = models.CharField(max_length=50, blank=True, null=True)
     tel = models.CharField(max_length=50, blank=True, null=True)
@@ -31,7 +31,7 @@ class CheongdamDong(models.Model):
         db_table = 'cheongdam_dong'
 
 class Gangnam(models.Model):
-    name = models.CharField(max_length=50, blank=True, null=True)
+    name = models.CharField(max_length=50, blank=True, primary_key=True)
     addr1 = models.CharField(max_length=50, blank=True, null=True)
     tel = models.CharField(max_length=50, blank=True, null=True)
     urls = models.CharField(max_length=128, blank=True, null=True)
@@ -41,7 +41,7 @@ class Gangnam(models.Model):
         db_table = 'gangnam'
 
 class NonhyeonDong(models.Model):
-    column1 = models.IntegerField(db_column='Column1', blank=True, null=True)  # Field name made lowercase.
+    column1 = models.IntegerField(db_column='Column1', blank=True, primary_key=True)  # Field name made lowercase.
     name = models.CharField(max_length=50, blank=True, null=True)
     addr1 = models.CharField(max_length=50, blank=True, null=True)
     tel = models.CharField(max_length=50, blank=True, null=True)
@@ -51,8 +51,8 @@ class NonhyeonDong(models.Model):
         managed = False
         db_table = 'nonhyeon_dong'
 
-class SamseongDong(models.Model):
-    column1 = models.IntegerField(db_column='Column1', blank=True, null=True)  # Field name made lowercase.
+class SamsungDong(models.Model):
+    column1 = models.IntegerField(db_column='Column1', blank=True, primary_key=True)  # Field name made lowercase.
     name = models.CharField(max_length=50, blank=True, null=True)
     addr1 = models.CharField(max_length=50, blank=True, null=True)
     tel = models.CharField(max_length=50, blank=True, null=True)
@@ -63,7 +63,7 @@ class SamseongDong(models.Model):
         db_table = 'samseong_dong'
 
 class SinsaDong(models.Model):
-    column1 = models.IntegerField(db_column='Column1', blank=True, null=True)  # Field name made lowercase.
+    column1 = models.IntegerField(db_column='Column1', blank=True, primary_key=True)  # Field name made lowercase.
     name = models.CharField(max_length=50, blank=True, null=True)
     addr1 = models.CharField(max_length=50, blank=True, null=True)
     tel = models.CharField(max_length=50, blank=True, null=True)
