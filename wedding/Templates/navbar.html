@@ -1,31 +1,44 @@
+
+<br>
+<center>
+<img src="https://postfiles.pstatic.net/MjAyMzA4MjRfMjE0/MDAxNjkyODY3MTgzMzAy.4eg0wb-v245_T_wtDYo2Fvpp_7p5gnU1OIJt2WUxanwg.MaZH-6h-WohEudAC2a2hUOUtweqHNhFwkz4IK6ot1Jsg.JPEG.suny082855/SE-2edb8142-3893-4a9a-a175-4c816ad6ea3a.jpg?type=w966">
+<br>
+</center>
 <nav class="navbar navbar-expand-lg navbar-light bg-light pb-3">
     <div class="container px-4 px-lg-5 mt-3">
-        <a class="navbar-brand" href="{% url 'wedding_urls' %}">Wever</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-20">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'wedding_urls' %}">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="{% url 'reservation_page' %}">Reservation</a></li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="{% url 'wedding_urls' %}"
-                       role="button" data-bs-toggle="dropdown" aria-expanded="false">강남</a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="{% url 'non_page' %}">논현</a></li>
-                        <li><a class="dropdown-item" href="{% url 'chu_page' %}">청담</a></li>
-                        <li><a class="dropdown-item" href="{% url 'sin_page' %}">신사</a></li>
-                        <li><a class="dropdown-item" href="{% url 'sam_page' %}">삼성</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc7NEAZ-V2Ovkqk6NMXV0kYrAV69vng14uJQ&usqp=CAU" style="width:140px; height:60px;"/></img>
-            <form class="d-flex">
-              <button class="btn btn">
-                  <a class="fa-brands fa-instagram fa-2xl" style="color: #000000;"
-                     href="https://instagram.com/byeongsunny_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" >
-                  </a>
-                </button>
-            </form>
-        </div>
+            <div class="collapse navbar-collapse">
+                <a class="navbar-brand me-20" href="{% url 'wedding_urls' %}">GangNam</a>
+        <!--        <center>-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-lg-20">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="{% url 'wedding_urls' %}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="{% url 'about_page' %}">About</a></li>
+                    <li><a class="nav-item"><a class="nav-link"href="{% url 'non_page' %}">Nonhyeon</a></li>
+                    <li><a class="nav-item"><a class="nav-link" href="{% url 'chu_page' %}">Chungdam</a></li>
+                    <li><a class="nav-item"><a class="nav-link"href="{% url 'sin_page' %}">Sinsa</a></li>
+                    <li><a class="nav-item"><a class="nav-link"href="{% url 'sam_page' %}">Samsung</a></a></li>
+                    </li>
+                </ul>
+    <!--        </center>-->
+                <div class="d-md-flex justify-content-md-end ms-auto">
+                        <form class="d-flex d-md-flex justify-content-md-end">
+                          <button class="btn btn float-right">
+                              <a class="fa-brands fa-instagram fa-2xl" style="color: #000000;"
+                                 href="https://instagram.com/byeongsunny_?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" >
+                              </a>
+                            </button>
+                        </form>
+
+                        <form class="d-flex">
+                          <button class="btn btn float-right">
+                              <a class="fa-regular fa-envelope fa-2xl" style="color: #000000;"
+                                 href="{% url 'reservation_page' %}" target="_blank" >
+                              </a>
+                            </button>
+                        </form>
+                </div>
+            </div>
     </div>
 </nav>

@@ -36,6 +36,11 @@ next.addEventListener('click', function () {
   }
   currentIdx += 1;
 });
+function plz_click() {
+  next.click();
+  setTimeout(plz_click, 2000);
+};
+plz_click();
 prev.addEventListener('click', function () {
   //이전 버튼 눌렀을때
   console.log(currentIdx);
