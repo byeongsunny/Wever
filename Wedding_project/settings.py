@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "wedding",
     "bootstrap4",
     "phonenumber_field",
+    "mathfilters",
 
 ]
 

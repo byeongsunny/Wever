@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% load mathfilters %}
 <html lang="ko">
     <head>
             <meta charset="UTF-8">
@@ -310,8 +311,8 @@
 					</thead>
                     {% for i in samsung_page_obj %}
                     <tbody>
-                        <tr>
-                            <th>{{ i.column1 }}</th>
+                        <!--column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.-->
+                            <th>{{ i.column1|add:1 }}</th>
                             <th>
                                 {% if i.urls != '#none' %}
                                 <a href ="{{ i.urls }}">{{ i.name }}</a>
