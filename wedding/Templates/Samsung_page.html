@@ -47,7 +47,7 @@
                                 <script>
                                        var container = document.getElementById('map');
                                        var options = {
-                                          center: new kakao.maps.LatLng(37.497091, 127.063476),
+                                          center: new kakao.maps.LatLng(37.514287, 127.056199),
                                           level: 3
                                        };
                                        var map = new kakao.maps.Map(container, options);
@@ -305,20 +305,24 @@
 							<th>Name</th>
 							<th>Addr</th>
 							<th>Phone</th>
-                            <th>Event</th>
 						</tr>
 					</thead>
-					<tbody>
-						<c:forEach items="${boards}" var="board">
-							<tr>
-								<td>${board.bno}</td>
-								<td><a href="get?bno=${board.bno} ">${board.title}</a></td>
-								<td>${board.writer}</td>
-								<td>${board.hitCount}</td>
-								<td>${board.regDate}</td>
-							</tr>
-						</c:forEach>
-					</tbody>
+                    {% for i in samsung %}
+                    <tbody>
+                        <tr>
+                            <th>{{ i.column1 }}</th>
+                            <th>
+                                {% if i.urls != '#none' %}
+                                <a href ="{{ i.urls }}">{{ i.name }}</a>
+                                {% else %}
+                                <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>
+                                {% endif %}
+                            </th>
+                            <th>{{ i.addr1 }}</th>
+                            <th>{{ i.tel }}</th>
+                        </tr>
+                    </tbody>
+                    {% endfor %}
 				</table>
 			</div>
 		</div>
