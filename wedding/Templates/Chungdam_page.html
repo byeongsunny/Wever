@@ -21,31 +21,11 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://cdn.entermedia.co.kr/news/photo/202201/28434_53275_37.jpg" alt="..." /></div>
-                    <div class="col-md-6">
-                        <div class="small mb-1">강남구 빈지노로 123-456</div>
-                        <h1 class="display-5 fw-bolder">청담동 웨딩홀</h1>
-                            <div class="fs-5 mb-5">
-                                <span class="text-decoration-line-through">$45.00</span>
-                                <span>$40.00</span>
-                            </div>
-                        <p class="lead">
-                            노블발렌티 대치점은 웨딩에 있어 '진정한 가치 창출의 필요성'에 공감합니다.
-                            이에 고객이 진정으로 선호하는 니즈와 원츠를 구체적으로 해석해 최상의 서비스를 제공하고자 만전을 기하고 있습니다.
-                            과거와 현재의 시간성에 구애받지 않는, 고전미와 현대미의 완벽한 조화로써 최고의 만족도를 자랑하는 특별한 하루를 선사하겠습니다.
-                        </p>
-                        <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <a href="{% url 'reservation_page' %}">
-                                    예약하기
-                                </a>
-                            </button>
-                        </div>
-                        <br>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://search.pstatic.net/common/?src=https%3A%2F%2Fldb-phinf.pstatic.net%2F20200203_92%2F15807057407789IRf2_PNG%2FUB_bMrAP5sNGr4HzIjeMfXHa.png" alt="..." />
                         <div>
                             <!-- 지도생성 -->
-                            <div id="map" style="width:500px;height:400px;"></div>
+                            <br>
+                            <div id="map" style="width:600px;height:400px;"></div>
                             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bc3e78a83483afc1a2975e9c8844e7f0"></script>
                                 <script>
                                        var container = document.getElementById('map');
@@ -57,6 +37,63 @@
                                 </script>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="small mb-1">서울 강남구 압구정로60길 17-5</div>
+                        <h1 class="display-5 fw-bolder">더클래스청담</h1>
+                        <div class="fs-5 mb-5">
+                            <span>전 화 번 호 : 0507-1446-3638</span>
+                        </div>
+                            <p class="lead">
+                                -- 더클래스 청담 하우스웨딩 --
+                                <br>
+                                인생에서 가장 아름다운 순간
+                                당신이 꿈꾸던 웨딩을 실현할 수 있는 멋진 베뉴!
+                                더클래스 청담이 함께합니다.
+                                <br>
+                                트렌드를 선도하는 청담동
+                                도심속 아름다운 정원에서
+                                하늘이 보이고 (개폐식 럭셔리어닝 설치완비)
+                                숲속 느낌의 생화장식으로 진행되는
+                                하우스 웨딩을 마음것 즐길 수 있는 공간
+                                <br>
+                                신랑 신부님과 함께 디자인한 생화로
+                                커스터마이징 디자인을 연출하여
+                                가든 파티의 묘미를 선보이는 공간
+                                <br>
+                                축복해주시는 모든 하객분들께 더클래스 청담의
+                                마스터 쉐프의 품격 있는 요리로 보답할 수 있는 공간
+                                <br>
+                                하우스웨딩은 더클래스 청담입니다.
+                                <br>
+                                <br>
+                                -- 더클래스 청담 기업행사 --
+                                <br>
+                                더클래스청담은 차별화된
+                                기업행사가 가능합니다.
+                                기업행사의 종류와 컨셉에 맞춰
+                                기획, 세팅해 드립니다.
+                                꽃장식, 소품, 테이블세팅 등 원하는 컨셉으로 준비해 드리며
+                                와인테이블, 식순지, 데코픽 등에 기업을 대표하는
+                                로고를 넣어 맞춤 디자인 해드립니다.
+                                <br>
+                                독채 건물로 프라이빗한 기업행사가 가능하며
+                                런칭행사, 기업파티, 신년회, 송년회, vip행사 등
+                                다양한 기업행사 경험을 바탕으로
+                                품격있는 기업행사를 준비해드립니다.
+                                <br>
+                                접근성이 좋은 청담에서 기업의 가치를 높이는
+                                기업행사를 준비해드립니다.
+                            </p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                <a href="http://theclasscheongdam.com/">
+                                    예약하기
+                                </a>
+                            </button>
+                        </div>
+                        <br>
+
+                    </div>
                 </div>
             </div>
         </section>
@@ -65,12 +102,12 @@
                  <div id="slideShow">
                     <ul class="slides">
                        {% for _ in '0000' %}
-                              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
-                              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
-                              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
-                              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
-                              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                             <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
+                              <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MDhfMjA0%2FMDAxNjgzNTE2NTQzNDc1.ca-4_1VSDc95zFBni0AKLKRsMjPOxAl6nYBNQyh6iksg._2ZXxWlyvFagvurKOupIR6C5uULvrW7xj8Sw5Az0kzQg.JPEG.theclass_cheongdam%2F%25C0%25CC%25B9%25CC%25C1%25F6_4.JPG" alt=""></li>
+                              <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA1MDhfMjUz%2FMDAxNjgzNTE2NzcyOTY5.EF_qz5sHniBJd7LC1dGfXnXH9e5uc1MmObm_wscIJUAg.7ZL44u3yTEOcVrFae7L8R-OOPagzL9OW9QRTWYQSU3wg.JPEG.theclass_cheongdam%2F%25C0%25CC%25B9%25CC%25C1%25F6_7.JPG" alt=""></li>
+                              <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMjEyMDFfMjY4%2FMDAxNjY5ODcyNjc4ODk0.pIWThIcBXyhEjjiEWsXkoTvqvJOwqT4lv6rosbJrjfMg.JYNelmK8ynDvwy08TpGIuKyxoNhgfkozfL_dnOJRzCQg.JPEG.theclass_cheongdam%2FKakaoTalk_20221201_120140386_06.jpg" alt=""></li>
+                              <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MTVfODIg%2FMDAxNjg2ODQwNTY2MTg4.-mUOQbC-3qFtNztqVorur0G5fjP0b-_13u04jywClpEg.1F4f8474LhX3J9Gb9xZOt09fEjGGf5oz1hp2HmgFaocg.JPEG.lovingphotography%2F%25C0%25CC%25C0%25BA%25C1%25F6%25B4%25D482.jpg" alt=""></li>
+                              <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MTNfMjkx%2FMDAxNjkxOTIxODg5MzQ1.pS5xOOdy8UjzcHZZbmMlLF19MuiKVUB28_FGQr0bEQcg.LIgmEAorSx1lEdz-vyEhHBtce1n6c9mVCcbBg97XpnAg.JPEG.ourtheirhome%2F20230805%25A3%25DF183833.jpg" alt=""></li>
+                             <li><img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA3MDZfMzAw%2FMDAxNjg4NjE3Njg4Mjc1.WL55pmjV416nI-dZNBFcJnPOwouzGpP8VTZRavL57Ikg.XlHGQ_wVBdCLSch5N89RUVN2EWCkndwD_2hONP2ya2kg.JPEG.jay_yuns%2F230625_%25C0%25B1%25BA%25F3%25BC%25BA%25C1%25D8_%25B4%25D4_1613.jpg" alt=""></li>
                         {% endfor %}
                     </ul>
                         <p class="controller">
@@ -81,220 +118,6 @@
                 </div>
                 <link href="{% static 'Nonhyeon_css/css/ImageSlide.css' %}" rel="stylesheet" />
                 <script src="{% static 'Nonhyeon_css/js/ImageSlide.js'%}"></script>
-
-
-                <!-- Related items section-->
-                <section class="py-5 bg-light">
-                    <div class="container px-4 px-lg-5 mt-5">
-                        <h2 class="fw-bolder mb-4">논현의 다른 웨딩홀</h2>
-                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://img.vogue.co.kr/vogue/2021/03/style_605af6e921b7c.jpeg" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Fancy Product</h5>
-                                            <!-- Product price-->
-                                            $40.00 - $80.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View
-                                        </a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://file.mk.co.kr/meet/neds/2022/03/image_readtop_2022_215670_16467008394968006.jpg" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Special Item</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
-                                            <span class="text-muted text-decoration-line-through">$20.00</span>
-                                            $18.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://img.dmitory.com/img/202305/1JL/a8X/1JLa8X0zQyGGmM8ko6UEyO.png" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Sale Item</h5>
-                                            <!-- Product price-->
-                                            <span class="text-muted text-decoration-line-through">$50.00</span>
-                                            $25.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://img.dmitory.com/img/202305/5Yr/oGs/5YroGsolMskWm268Gi8Cee.jpg" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
-                                            $40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- Related items section-->
-                <section class="py-5 bg-light">
-                    <div class="container px-4 px-lg-5 mt-5">
-                        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://img.dmitory.com/img/202305/7Eo/vOj/7EovOjJLxu24AwGewGaISY.jpg" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Fancy Product</h5>
-                                            <!-- Product price-->
-                                            $40.00 - $80.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://img.dmitory.com/img/202305/7pP/DO1/7pPDO1wenC0Oy4O2eww0Oq.png" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Special Item</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
-                                            <span class="text-muted text-decoration-line-through">$20.00</span>
-                                            $18.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Sale badge-->
-                                    <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="http://res.heraldm.com/content/image/2022/06/27/20220627000305_0.jpg" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Sale Item</h5>
-                                            <!-- Product price-->
-                                            <span class="text-muted text-decoration-line-through">$50.00</span>
-                                            $25.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col mb-5">
-                                <div class="card h-100">
-                                    <!-- Product image-->
-                                    <img class="card-img-top" src="https://img.dmitory.com/img/202305/5xl/Ntj/5xlNtjvSggMmqO0AogyCW8.png" alt="..." />
-                                    <!-- Product details-->
-                                    <div class="card-body p-4">
-                                        <div class="text-center">
-                                            <!-- Product name-->
-                                            <h5 class="fw-bolder">Popular Item</h5>
-                                            <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                                <div class="bi-star-fill"></div>
-                                            </div>
-                                            <!-- Product price-->
-                                            $40.00
-                                        </div>
-                                    </div>
-                                    <!-- Product actions-->
-                                    <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                        <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
             <main class="mt-5 pt-5">
             <div class="container-fluid px-50">
                 <h4 class="mt-4 text-center">Wedding Hall List</h4>

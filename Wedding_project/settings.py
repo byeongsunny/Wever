@@ -80,14 +80,14 @@ WSGI_APPLICATION = "Wedding_project.wsgi.application"
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.mysql",
-        "NAME": "wedding",
-        "USER": "root",
-        "PASSWORD": "0000",
-        "HOST": "localhost",
-        "PORT": "3307",
-    }
+    # "default": {
+    #     "ENGINE": "django.db.backends.mysql",
+    #     "NAME": "wedding",
+    #     "USER": "root",
+    #     "PASSWORD": "0000",
+    #     "HOST": "localhost",
+    #     "PORT": "3307",
+    # }
 }
 
 

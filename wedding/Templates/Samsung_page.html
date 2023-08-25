@@ -20,30 +20,11 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://cdnweb01.wikitree.co.kr/webdata/editor/202106/30/img_20210630161037_6690f9a2.webp" alt="..." /></div>
-                    <div class="col-md-6">
-                        <div class="small mb-1">강남구 빈지노로 123-456</div>
-                        <h1 class="display-5 fw-bolder">삼성동 웨딩홀</h1>
-                        <div class="fs-5 mb-5">
-                                <span class="text-decoration-line-through">$45.00</span>
-                                <span>$40.00</span>
-                        </div>
-                            <p class="lead">
-                                노블발렌티 대치점은 웨딩에 있어 '진정한 가치 창출의 필요성'에 공감합니다.
-                                이에 고객이 진정으로 선호하는 니즈와 원츠를 구체적으로 해석해 최상의 서비스를 제공하고자 만전을 기하고 있습니다.
-                                과거와 현재의 시간성에 구애받지 않는, 고전미와 현대미의 완벽한 조화로써 최고의 만족도를 자랑하는 특별한 하루를 선사하겠습니다.
-                            </p>
-                        <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                    <a href="{% url 'reservation_page' %}">
-                                            예약하기
-                                    </a>
-                            </button>
-                        </div> <br>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://cdn.imweb.me/thumbnail/20230313/b857e2895ea73.jpg" alt="..." />
                         <div>
                             <!-- 지도생성 -->
-                            <div id="map" style="width:500px;height:400px;"></div>
+                            <br>
+                            <div id="map" style="width:600px;height:400px;"></div>
                             <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bc3e78a83483afc1a2975e9c8844e7f0"></script>
                                 <script>
                                        var container = document.getElementById('map');
@@ -55,245 +36,61 @@
                                 </script>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                       <div class="small mb-1">서울 강남구 봉은사로 637</div>
+                        <h1 class="display-5 fw-bolder">노블발렌티 삼성점</h1>
+                        <div class="fs-5 mb-5">
+                            <span>전 화 번 호 : 02-540-0711</span>
+                        </div>
+                            <p class="lead">
+                                꿈꿔왔던 그 이상의 웨딩 노블발렌티.<br/>
+                                영국의 대저택 컨셉의 노블발렌티는 빅토리아 양식의 웅장하고 클래식한 느낌의 세리머니홀과 모던 클래식 컨셉의 개별 공간,
+                                프라이빗하고 싱그러운 가든으로 구성되어 있습니다.<br/>
+                                <br/>
+                                주인공은 물론이고 게스트 역시 소중한 날의 가치를 공유할 수 있는 소통의 공간, 바로 노블발렌티가 추구하는 채플웨딩입니다.<br/>
+                                <br/>
+                                세상에 단 하나 뿐인 나만의 웨딩
+                                세레머니 홀 내에는 노블발렌티의 심볼인 대형 '종'이 달려있어 축복의 의미를 담아 예식 시작을 성스럽게 울려줍니다.<br/>
+                                <br/>
+                                한국 최초의 메뉴 선택형 웨딩프로그램
+                                식사 위주의 결혼식 문화에서 탈피하여 다양한 컨텐츠의 유럽식 정통 채플웨딩 스타일을 한국의 정서에 맞추어 기획합니다.<br/>
+                                신문화에 대한 고객의 부담감을 배려한 다양하고 합리적인 프로그램을 제시하여 세련된 감각의 채플웨딩 스타일을 완성합니다.<br/>
+                            </p>
+                        <div class="d-flex">
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                    <a href="http://www.noblevalenti.co.kr/">
+                                            예약하기
+                                    </a>
+                            </button>
+                        </div> <br>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- 이미지 슬라이드-->
-             <div id="slideShow">
+            <div id="slideShow">
                 <ul class="slides">
-                    {% for _ in '0000' %}
-                      <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
-                      <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
-                      <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
-                      <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
-                      <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                     <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                    {% endfor %}
+                {% for _ in '0000' %}
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230519/9923abb7b89ec.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230519/957fbe3ddcaf5.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230316/272affb3ea876.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230314/03496a7f7a722.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230314/afac0d498b1f1.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230314/da3b35ec8ad6b.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230316/db30faa380c92.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230316/4db9f8291ad36.jpg" alt=""></li>
+                    <li><img src="https://cdn.imweb.me/thumbnail/20230316/528bc650b02c8.jpg" alt=""></li>
+                {% endfor %}
                 </ul>
-                    <p class="controller">
-                          <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
-                          <span class="prev">&lang;</span>
-                          <span class="next">&rang;</span>
-                    </p>
+                <p class="controller">
+                    <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
+                    <span class="prev">&lang;</span>
+                    <span class="next">&rang;</span>
+                </p>
             </div>
                 <link href="{% static 'Nonhyeon_css/css/ImageSlide.css' %}" rel="stylesheet" />
                 <script src="{% static 'Nonhyeon_css/js/ImageSlide.js'%}"></script>
-
-
-            <!-- Related items section-->
-            <section class="py-5 bg-light">
-                <div class="container px-4 px-lg-5 mt-5">
-                    <h2 class="fw-bolder mb-4">논현의 다른 웨딩홀</h2>
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.vogue.co.kr/vogue/2021/03/style_605af6e921b7c.jpeg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Fancy Product</h5>
-                                        <!-- Product price-->
-                                        $40.00 - $80.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View
-                                    </a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://file.mk.co.kr/meet/neds/2022/03/image_readtop_2022_215670_16467008394968006.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Special Item</h5>
-                                        <!-- Product reviews-->
-                                            <div class="d-flex justify-content-center small text-warning mb-2">
-                                                    <div class="bi-star-fill"></div>
-                                                    <div class="bi-star-fill"></div>
-                                                    <div class="bi-star-fill"></div>
-                                                    <div class="bi-star-fill"></div>
-                                                    <div class="bi-star-fill"></div>
-                                            </div>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$20.00</span>
-                                        $18.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/1JL/a8X/1JLa8X0zQyGGmM8ko6UEyO.png" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Sale Item</h5>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$50.00</span>
-                                        $25.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/5Yr/oGs/5YroGsolMskWm268Gi8Cee.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Popular Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        $40.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Related items section-->
-            <section class="py-5 bg-light">
-                <div class="container px-4 px-lg-5 mt-5">
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/7Eo/vOj/7EovOjJLxu24AwGewGaISY.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Fancy Product</h5>
-                                        <!-- Product price-->
-                                        $40.00 - $80.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/7pP/DO1/7pPDO1wenC0Oy4O2eww0Oq.png" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Special Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$20.00</span>
-                                        $18.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="http://res.heraldm.com/content/image/2022/06/27/20220627000305_0.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Sale Item</h5>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$50.00</span>
-                                        $25.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/5xl/Ntj/5xlNtjvSggMmqO0AogyCW8.png" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Popular Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        $40.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
 	<main class="mt-5 pt-5">
 	<div class="container-fluid px-50">
 		<h4 class="mt-4 text-center">Wedding Hall List</h4>
@@ -311,63 +108,63 @@
 							<th>Phone</th>
 						</tr>
 					</thead>
-                    {% for i in samsung_page_obj %}
-                    <tbody>
-                        <!--column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.-->
-                            <th>{{ i.column1|add:1 }}</th>
-                            <th>
-                                {% if i.urls != '#none' %}
-                                <a href ="{{ i.urls }}">{{ i.name }}</a>
-                                {% else %}
-                                <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>
-                                {% endif %}
-                            </th>
-                            <th>{{ i.addr1 }}</th>
-                            <th>{{ i.tel }}</th>
-                        </tr>
-                    </tbody>
-                    {% endfor %}
-				</table>
-			</div>
-		</div>
-        <!-- 페이지네이션 -->
-        <ul class="pagination pagination-lg justify-content-center">
-            <!--이전페이지 존재한다면-->
-            {% if samsung_page_obj.has_previous %}
-            <li class="page-item">
-                <a class="page-link" href="?page={{ samsung_page_obj.previous_page_number}}" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                </a>
-            </li>
-            {% else %}
-            <li class="page-item disabled">
-                <a class="page-link" tabindex="-1" href="#">&laquo;</a>
-            </li>
-            {% endif %}
-            <!--페이지리스트-->
-            <!--페이지 범위를 하나씩 리턴-->
-            {% for data in samsung_page_obj.paginator.page_range %}
-                <!-- nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 -->
-                {% if data == samsung_page_obj.number %}
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>
-                </li>
-                {% else %}
-                <li class="page-item">
-                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>
-                </li>
-                {% endif %}
-            {% endfor %}
-            <!--다음페이지-->
-            {% if samsung_page_obj.has_next %}
-            <li class="page-item">
-                <a class="page-link" href="?page={{ samsung_page_obj.next_page_number }}">&raquo;</a>
-            </li>
-            {% else %}
-            <li class="page-item disabled">
-                <a class="page-link" tabindex="-1" href="#">&raquo;</a>
-            </li>
-            {% endif %}
+<!--                    {% for i in samsung_page_obj %}-->
+<!--                    <tbody>-->
+<!--                        &lt;!&ndash;column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.&ndash;&gt;-->
+<!--                            <th>{{ i.column1|add:1 }}</th>-->
+<!--                            <th>-->
+<!--                                {% if i.urls != '#none' %}-->
+<!--                                <a href ="{{ i.urls }}">{{ i.name }}</a>-->
+<!--                                {% else %}-->
+<!--                                <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>-->
+<!--                                {% endif %}-->
+<!--                            </th>-->
+<!--                            <th>{{ i.addr1 }}</th>-->
+<!--                            <th>{{ i.tel }}</th>-->
+<!--                        </tr>-->
+<!--                    </tbody>-->
+<!--                    {% endfor %}-->
+<!--				</table>-->
+<!--			</div>-->
+<!--		</div>-->
+<!--        &lt;!&ndash; 페이지네이션 &ndash;&gt;-->
+<!--        <ul class="pagination pagination-lg justify-content-center">-->
+<!--            &lt;!&ndash;이전페이지 존재한다면&ndash;&gt;-->
+<!--            {% if samsung_page_obj.has_previous %}-->
+<!--            <li class="page-item">-->
+<!--                <a class="page-link" href="?page={{ samsung_page_obj.previous_page_number}}" aria-label="Previous">-->
+<!--                    <span aria-hidden="true">&laquo;</span>-->
+<!--                </a>-->
+<!--            </li>-->
+<!--            {% else %}-->
+<!--            <li class="page-item disabled">-->
+<!--                <a class="page-link" tabindex="-1" href="#">&laquo;</a>-->
+<!--            </li>-->
+<!--            {% endif %}-->
+<!--            &lt;!&ndash;페이지리스트&ndash;&gt;-->
+<!--            &lt;!&ndash;페이지 범위를 하나씩 리턴&ndash;&gt;-->
+<!--            {% for data in samsung_page_obj.paginator.page_range %}-->
+<!--                &lt;!&ndash; nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 &ndash;&gt;-->
+<!--                {% if data == samsung_page_obj.number %}-->
+<!--                <li class="page-item active" aria-current="page">-->
+<!--                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>-->
+<!--                </li>-->
+<!--                {% else %}-->
+<!--                <li class="page-item">-->
+<!--                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>-->
+<!--                </li>-->
+<!--                {% endif %}-->
+<!--            {% endfor %}-->
+<!--            &lt;!&ndash;다음페이지&ndash;&gt;-->
+<!--            {% if samsung_page_obj.has_next %}-->
+<!--            <li class="page-item">-->
+<!--                <a class="page-link" href="?page={{ samsung_page_obj.next_page_number }}">&raquo;</a>-->
+<!--            </li>-->
+<!--            {% else %}-->
+<!--            <li class="page-item disabled">-->
+<!--                <a class="page-link" tabindex="-1" href="#">&raquo;</a>-->
+<!--            </li>-->
+<!--            {% endif %}-->
         </ul>
 	</div>
 	</main>
