@@ -8,64 +8,57 @@
         <script src="https://kit.fontawesome.com/cfeddde540.js" crossorigin="anonymous"></script>
         <title> Wever!</title>
   </head>
-
-  <body style = "background-color:White">
-        <!-- Navigation : 네비게이션 바!-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        {% include "navbar.html" %}
-
-        <!--결혼식 영상-->
-            <br>
-            <br>
-            <center>
-                <iframe style="border-radius: 0.8rem" width="1050" height="600"
-                        src="https://www.youtube.com/embed/9jchW59IchI?si=hQIqPRxAnkyWILkn
-                                            &autoplay=1&mute=1&start=43&controls=0&modestbranding=1&"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
-            </center>
-
-        <!-- Section 네개의 대문 웨딩홀-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-
-
-                            <!-- 논현동 라온제나 강남-->
-                            <div class="col mb-5">
-                            <div class="card h-100">
-                            <!-- Best badge-->
-                            <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
-                            <!-- 라온제나 강남 대표 image-->
-                            <img class="card-img-top" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MThfMjU0%2FMDAxNjkyMzE2NDYwMzM4.iZ8WpJucipE8WP-zpaoFVj34fA8W7wgtGnSCNG_PcGMg.bdftfz1WJ3q4c1oCQloePwa4CZXsJ4a7PHIL9WVrH-Eg.JPEG.overtook58236%2F%25BC%25AD%25BF%25EF%25BF%25FE%25B5%25F9%25C8%25A6%25C3%25DF%25C3%25B55%25A3%25AD1.jpg" alt="..." />
-                            <!-- 대표 이미지 내용 details-->
-                            <div class="card-body p-4">
+<body style = "background-color:White">
+    <!-- Navigation : 네비게이션 바!-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    {% include "navbar.html" %}
+    <!--결혼식 영상-->
+        <br>
+        <br>
+    <center>
+        <iframe style="border-radius: 0.8rem" width="1050" height="600"
+                src="https://www.youtube.com/embed/9jchW59IchI?si=hQIqPRxAnkyWILkn
+                     &autoplay=1&mute=1&start=43&controls=0&modestbranding=1&"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+    </center>
+    <!-- Section 네개의 대문 웨딩홀-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- 논현동 라온제나 강남-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Best badge-->
+                        <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
+                        <!-- 라온제나 강남 대표 image-->
+                        <img class="card-img-top" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MThfMjU0%2FMDAxNjkyMzE2NDYwMzM4.iZ8WpJucipE8WP-zpaoFVj34fA8W7wgtGnSCNG_PcGMg.bdftfz1WJ3q4c1oCQloePwa4CZXsJ4a7PHIL9WVrH-Eg.JPEG.overtook58236%2F%25BC%25AD%25BF%25EF%25BF%25FE%25B5%25F9%25C8%25A6%25C3%25DF%25C3%25B55%25A3%25AD1.jpg" alt="..." />
+                        <!-- 대표 이미지 내용 details-->
+                        <div class="card-body p-4">
                             <div class="text-center">
                             <!-- 라온제나 타이틀-->
                             <h5 class="fw-bolder">라온제나 강남</h5>
                             <h6 class="fw-bolder">Laonzena Gangnam</h6>
                             <!-- 라온제나 주소-->
                             서울 강남구 학동로47길
+                            </div>
                         </div>
-                    </div>
                             <!-- 논현동 웨딩홀 상세보기 버튼-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                 <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'non_page' %}">More</a></div>
                             </div>
-                        </div>
                     </div>
-
-
-                            <!-- 청담동 웨딩홀 더 클래스 청담-->
-                            <div class="col mb-5">
-                            <div class="card h-100">
-                            <!-- Best badge-->
-                            <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
-                            <!-- 청담 더 클래스 청담 대표 image-->
-                            <img class="card-img-top" src="http://theclasscheongdam.com/include/app/data/wedding_special_way/0911211239094087046302_8e973eda.jpg" alt="..." />
-                            <!-- 대표 이미지 내용 details-->
-                            <div class="card-body p-4">
-                            <div class="text-center">
+                </div>
+                <!-- 청담동 웨딩홀 더 클래스 청담-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                    <!-- Best badge-->
+                    <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
+                    <!-- 청담 더 클래스 청담 대표 image-->
+                    <img class="card-img-top" src="http://theclasscheongdam.com/include/app/data/wedding_special_way/0911211239094087046302_8e973eda.jpg" alt="..." />
+                    <!-- 대표 이미지 내용 details-->
+                    <div class="card-body p-4">
+                        <div class="text-center">
                             <!-- 청담 더 클래스  타이틀-->
                             <h5 class="fw-bolder">더 클래스 청담</h5>
                             <h6 class="fw-bolder">The Class CHEONGDAM</h6>
@@ -73,89 +66,83 @@
                             서울 강남구 학동로47길
                         </div>
                     </div>
-                            <!-- 청담동 웨딩홀 상세보기 버튼-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'chu_page' %}">More</a></div>
-                            </div>
+                        <!-- 청담동 웨딩홀 상세보기 버튼-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'chu_page' %}">More</a></div>
                         </div>
                     </div>
-
-
-                            <!-- 신사동 더 컨벤션 신사-->
-                            <div class="col mb-5">
-                            <div class="card h-100">
-                            <!-- Best badge-->
-                            <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
-                            <!-- 더 컨벤션 신사 대표 image-->
-                            <img class="card-img-top" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MjVfMTg1%2FMDAxNjg3Njc1MDQ0NDEz.yTY6cKcd044aaWMI0HBnhIo84F_3yS1h7FnWbexr88kg.S0w7A_pnpI37mI0y9F3xkJr49IJEZ4pRJr30M505ig0g.JPEG.parkjinsoo55%2FKakaoTalk_20230625_112852807_07.jpg" alt="..." />
-                            <!-- 대표 이미지 내용 details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                            <!-- 더 컨벤션 신사  타이틀-->
-                                    <h5 class="fw-bolder">더 컨벤션 신사</h5>
-                                    <h6 class="fw-bolder"> The Convention</h6>
-                            <!-- 더 컨벤션 신사 주소-->
-                            서울 강남구 강남대로 652
-                                </div>
-                            </div>
-                            <!-- 신사동 웨딩홀 상세보기 버튼-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'sin_page' %}">More</a></div>
+                </div>
+                <!-- 신사동 더 컨벤션 신사-->
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Best badge-->
+                        <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
+                        <!-- 더 컨벤션 신사 대표 image-->
+                        <img class="card-img-top" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA2MjVfMTg1%2FMDAxNjg3Njc1MDQ0NDEz.yTY6cKcd044aaWMI0HBnhIo84F_3yS1h7FnWbexr88kg.S0w7A_pnpI37mI0y9F3xkJr49IJEZ4pRJr30M505ig0g.JPEG.parkjinsoo55%2FKakaoTalk_20230625_112852807_07.jpg" alt="..." />
+                        <!-- 대표 이미지 내용 details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- 더 컨벤션 신사  타이틀-->
+                                <h5 class="fw-bolder">더 컨벤션 신사</h5>
+                                <h6 class="fw-bolder"> The Convention</h6>
+                                <!-- 더 컨벤션 신사 주소-->
+                                서울 강남구 강남대로 652
                             </div>
                         </div>
-                    </div>
-
-                            <!-- 삼성동 노블발렌티 삼성-->
-                            <div class="col mb-5">
-                            <div class="card h-100">
-                            <!-- Best badge-->
-                            <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
-                            <!-- 노블발렌티 삼성 대표 image-->
-                            <img class="card-img-top" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjNfMTAz%2FMDAxNjkyNzc3MjgwOTQw.8wr40d1GqHplSoVIemx0nCTDUlJQQ4ZeeBySxjTkX6Ug.osaK2Br_Yq4GttTnYOknDZUqxT41Utn6efG66fHe7PQg.JPEG.tmvhs456%2F20230819_120347.jpg" alt="..." />
-                            <!-- 노블발렌티 삼성 대표 image details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- 노블발렌티 삼성  타이틀-->
-                                    <h5 class="fw-bolder">노블발렌티 삼성</h5>
-                                    <h6 class="fw-bolder"> NOBLE VALENTI</h6>
-                                     <!-- 노블발렌티 삼성 주소-->
-                                    서울 강남구 봉은사로 637
-                                </div>
-                            </div>
-                            <!-- 삼성동 웨딩홀 상세보기 버튼-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'sam_page' %}">More</a></div>
-                            </div>
+                        <!-- 신사동 웨딩홀 상세보기 버튼-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'sin_page' %}">More</a></div>
                         </div>
                     </div>
-                </section>
-
-
-        <!-- 자동 슬라이드-->
-        <div id="slideShow">
-                <ul class="slides">
-                    {% for _ in '0000' %}
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-    <!--                      <li><img src="" alt=""></li>-->
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                    {% endfor %}
-                </ul>
-                    <p class="controller">
-                          <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
-                          <span class="prev">&lang;</span>
-                          <span class="next">&rang;</span>
-                    </p>
+                </div>
+                <!-- 삼성동 노블발렌티 삼성-->
+                <div class="col mb-5">
+                <div class="card h-100">
+                <!-- Best badge-->
+                <div class="badge bg-white text-dark position-absolute" style="top: 0.5rem; right: 0.5rem">Best</div>
+                <!-- 노블발렌티 삼성 대표 image-->
+                <img class="card-img-top" src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMzA4MjNfMTAz%2FMDAxNjkyNzc3MjgwOTQw.8wr40d1GqHplSoVIemx0nCTDUlJQQ4ZeeBySxjTkX6Ug.osaK2Br_Yq4GttTnYOknDZUqxT41Utn6efG66fHe7PQg.JPEG.tmvhs456%2F20230819_120347.jpg" alt="..." />
+                <!-- 노블발렌티 삼성 대표 image details-->
+                <div class="card-body p-4">
+                    <div class="text-center">
+                        <!-- 노블발렌티 삼성  타이틀-->
+                        <h5 class="fw-bolder">노블발렌티 삼성</h5>
+                        <h6 class="fw-bolder"> NOBLE VALENTI</h6>
+                         <!-- 노블발렌티 삼성 주소-->
+                        서울 강남구 봉은사로 637
+                    </div>
+                </div>
+                <!-- 삼성동 웨딩홀 상세보기 버튼-->
+                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="{% url 'sam_page' %}">More</a></div>
+                </div>
             </div>
-                <link href="{% static 'Nonhyeon_css/css/ImageSlide.css' %}" rel="stylesheet" />
-                <script src="{% static 'Nonhyeon_css/js/ImageSlide.js'%}"></script>
-        {% include "footer.html" %}
-      </body>
+        </div>
+    </section>
+    <!-- 자동 슬라이드-->
+    <div id="slideShow">
+        <ul class="slides">
+            {% for _ in '0000' %}
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
+                  <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
+            {% endfor %}
+        </ul>
+            <p class="controller">
+                  <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
+                  <span class="prev">&lang;</span>
+                  <span class="next">&rang;</span>
+            </p>
+    </div>
+    <link href="{% static 'Nonhyeon_css/css/ImageSlide.css' %}" rel="stylesheet" />
+    <script src="{% static 'Nonhyeon_css/js/ImageSlide.js'%}"></script>
+    {% include "footer.html" %}
+  </body>
 </html>

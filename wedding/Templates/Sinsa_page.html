@@ -3,390 +3,164 @@
 {% load mathfilters %}
 <html lang="ko">
     <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="ie=edge">
-            <link href="{% static 'Nonhyeon_css/css/styles.css' %}" rel="stylesheet" />
-            <script src="{% static 'Nonhyeon_css/js/scripts.js'%}"></script>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="{% static 'Nonhyeon_css/css/styles.css' %}" rel="stylesheet" />
+        <script src="{% static 'Nonhyeon_css/js/scripts.js'%}"></script>
 
-            <!-- Favicon-->
-            <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-            <link href="css/styles.css" rel="stylesheet" />
-            <script src="https://kit.fontawesome.com/cfeddde540.js" crossorigin="anonymous"></script>
-            <title>신사</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/cfeddde540.js" crossorigin="anonymous"></script>
+        <title>신사</title>
     </head>
-
 <body style="background-color:White">
-        <!-- Navigation-->
-        <!-- Navigation : 네비게이션 바!-->
-        {% include "navbar.html" %}
-        <!-- Product section-->
-        <section class="py-5">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://thumb.mt.co.kr/06/2020/10/2020102108198274271_1.jpg/dims/optimize/" alt="..." />
-                        <div>
-                            <!-- 지도생성 -->
-                            <br>
-                            <div id="map" style="width:500px;height:400px;"></div>
-                            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bc3e78a83483afc1a2975e9c8844e7f0"></script>
-                                <script>
-                                       var container = document.getElementById('map');
-                                       var options = {
-                                          center: new kakao.maps.LatLng(37.523622, 127.023063),
-                                          level: 3
-                                       };
-                                       var map = new kakao.maps.Map(container, options);
-                                </script>
-                        </div>
+    <!-- Navigation-->
+    <!-- Navigation : 네비게이션 바!-->
+    {% include "navbar.html" %}
+    <!-- Product section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://thumb.mt.co.kr/06/2020/10/2020102108198274271_1.jpg/dims/optimize/" alt="..." />
+                    <div>
+                        <!-- 지도생성 -->
+                        <br>
+                        <div id="map" style="width:500px;height:400px;"></div>
+                        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=bc3e78a83483afc1a2975e9c8844e7f0"></script>
+                        <script>
+                               var container = document.getElementById('map');
+                               var options = {
+                                  center: new kakao.maps.LatLng(37.523622, 127.023063),
+                                  level: 3
+                               };
+                               var map = new kakao.maps.Map(container, options);
+                        </script>
                     </div>
-                    <div class="col-md-6">
-                        <div class="small mb-1">서울 강남구 언주로 844 윤당빌딩 7층</div>
-                        <h1 class="display-5 fw-bolder">제이 웨딩</h1>
-                        <div class="fs-5 mb-5">
-                            <span>전 화 번 호 : 02-511-5922</span>
-                        </div>
-                            <p class="lead">
-                                제이웨딩은 2008년 설립된 웨딩컨설팅 기업으로 13년 이상 경력의 웨딩플래너들이 커뮤니티 카페를 운영하면서 경제적인 결혼준비와 다양한 노하우를 공유하고 있습니다.
-                                연간 12회의 웨딩 혼수박람회를 운영해 예비 신랑신부들에게 편리한 정보 공유의 장을 제공하고 스드메(스튜디오, 드레스, 메이크업)부터 신혼여행, 예물, 예복, 가전 등의 정보를 한 눈에 선보여 결혼준비를 원스톱으로 할 수 있도록 도움을 드리고 있습니다.
-                                다양한 웨딩 정보와 결혼준비 혜택을 확인하세요~
-                            </p>
-                        <div class="d-flex">
-                                <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                                    <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                            <a href="http://jwed.co.kr/Fair/weddingfair.asp?url_type=nplace">
-                                                    예약하기
-                                            </a>
-                                    </button>
-                            </div> <br>
-
+                </div>
+                <div class="col-md-6">
+                    <div class="small mb-1">서울 강남구 언주로 844 윤당빌딩 7층</div>
+                    <h1 class="display-5 fw-bolder">제이 웨딩</h1>
+                    <div class="fs-5 mb-5">
+                        <span>전 화 번 호 : 02-511-5922</span>
                     </div>
+                        <p class="lead">
+                            제이웨딩은 2008년 설립된 웨딩컨설팅 기업으로 13년 이상 경력의 웨딩플래너들이 커뮤니티 카페를 운영하면서 경제적인 결혼준비와 다양한 노하우를 공유하고 있습니다.
+                            연간 12회의 웨딩 혼수박람회를 운영해 예비 신랑신부들에게 편리한 정보 공유의 장을 제공하고 스드메(스튜디오, 드레스, 메이크업)부터 신혼여행, 예물, 예복, 가전 등의 정보를 한 눈에 선보여 결혼준비를 원스톱으로 할 수 있도록 도움을 드리고 있습니다.
+                            다양한 웨딩 정보와 결혼준비 혜택을 확인하세요~
+                        </p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                                    <a href="http://jwed.co.kr/Fair/weddingfair.asp?url_type=nplace">
+                                            홈페이지
+                                    </a>
+                            </button>
+                    </div>
+                    <br>
                 </div>
             </div>
-        </section>
-
-        <!-- 이미지 슬라이드-->
-             <div id="slideShow">
-                <ul class="slides">
-                   {% for _ in '0000' %}
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
-                          <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                         <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
-                    {% endfor %}
-                </ul>
-                    <p class="controller">
-                          <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
-                          <span class="prev">&lang;</span>
-                          <span class="next">&rang;</span>
-                    </p>
+        </div>
+    </section>
+    <!-- 이미지 슬라이드-->
+    <div id="slideShow">
+    <ul class="slides">
+       {% for _ in '0000' %}
+              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2610C54C593A6EE003" alt=""></li>
+              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F252DFD4E593A72540C" alt=""></li>
+              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F267F534C593A6EE40F" alt=""></li>
+              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2679F24C593A6EE20E" alt=""></li>
+              <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
+             <li><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Ft1.daumcdn.net%2Fcfile%2Ftistory%2F2174D74A593A6EE52F" alt=""></li>
+        {% endfor %}
+    </ul>
+    <p class="controller">
+          <!-- &lang: 왼쪽 방향 화살표 &rang: 오른쪽 방향 화살표 -->
+          <span class="prev">&lang;</span>
+          <span class="next">&rang;</span>
+    </p>
+    </div>
+    <link href="{% static 'Nonhyeon_css/css/ImageSlide.css' %}" rel="stylesheet" />
+    <script src="{% static 'Nonhyeon_css/js/ImageSlide.js'%}"></script>
+    <main class="mt-5 pt-5">
+        <div class="container-fluid px-50">
+            <h2 class="mt-4 text-center">Wedding Hall List</h2>
+            <p class="mt-4 text-center">(* 해당 홈페이지 없는 경우는  웨이버 문의하기 서비스로 연결됩니다.) </p>
+            <div class="card mb-4">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
+                    <table class="table table-hover table-striped">
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>Name</th>
+                                <th>Addr</th>
+                                <th>Phone</th>
+                            </tr>
+                        </thead>
+                        {% for i in sinsa_page_obj %}
+                        <tbody>
+                            <tr>
+                                <!--column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.-->
+                                <th>{{ i.column1|add:1 }}</th>
+                                <th>
+                                    {% if i.urls != "#none" %}
+                                    <a href ="{{ i.urls }}">{{ i.name }}</a>
+                                    {% else %}
+                                    <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>
+                                    {% endif %}
+                                </th>
+                                <th>{{ i.addr1 }}</th>
+                                <th>{{ i.tel }}</th>
+                            </tr>
+                        </tbody>
+                        {% endfor %}
+                    </table>
+                </div>
             </div>
-                <link href="{% static 'Nonhyeon_css/css/ImageSlide.css' %}" rel="stylesheet" />
-                <script src="{% static 'Nonhyeon_css/js/ImageSlide.js'%}"></script>
-
-
-            <!-- Related items section-->
-            <section class="py-5 bg-light">
-                <div class="container px-4 px-lg-5 mt-5">
-                    <h2 class="fw-bolder mb-4">논현의 다른 웨딩홀</h2>
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.vogue.co.kr/vogue/2021/03/style_605af6e921b7c.jpeg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Fancy Product</h5>
-                                        <!-- Product price-->
-                                        $40.00 - $80.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View
-                                    </a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://file.mk.co.kr/meet/neds/2022/03/image_readtop_2022_215670_16467008394968006.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Special Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$20.00</span>
-                                        $18.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/1JL/a8X/1JLa8X0zQyGGmM8ko6UEyO.png" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Sale Item</h5>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$50.00</span>
-                                        $25.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <a class="btn btn-outline-dark mt-auto" href="#">
-                                            View
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/5Yr/oGs/5YroGsolMskWm268Gi8Cee.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Popular Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        $40.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Related items section-->
-            <section class="py-5 bg-light">
-                <div class="container px-4 px-lg-5 mt-5">
-                    <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/7Eo/vOj/7EovOjJLxu24AwGewGaISY.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Fancy Product</h5>
-                                        <!-- Product price-->
-                                        $40.00 - $80.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/7pP/DO1/7pPDO1wenC0Oy4O2eww0Oq.png" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Special Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$20.00</span>
-                                        $18.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Sale badge-->
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
-                                <!-- Product image-->
-                                <img class="card-img-top" src="http://res.heraldm.com/content/image/2022/06/27/20220627000305_0.jpg" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Sale Item</h5>
-                                        <!-- Product price-->
-                                        <span class="text-muted text-decoration-line-through">$50.00</span>
-                                        $25.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <!-- Product image-->
-                                <img class="card-img-top" src="https://img.dmitory.com/img/202305/5xl/Ntj/5xlNtjvSggMmqO0AogyCW8.png" alt="..." />
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder">Popular Item</h5>
-                                        <!-- Product reviews-->
-                                        <div class="d-flex justify-content-center small text-warning mb-2">
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                            <div class="bi-star-fill"></div>
-                                        </div>
-                                        <!-- Product price-->
-                                        $40.00
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">View</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        <main class="mt-5 pt-5">
-            <div class="container-fluid px-50">
-                <h2 class="mt-4 text-center">Wedding Hall List</h2>
-                <p class="mt-4 text-center">(* 해당 홈페이지 없는 경우는  웨이버 문의하기 서비스로 연결됩니다.) </p>
-                <div class="card mb-4">
-                    <div class="card-header">
-                    </div>
-                    <div class="card-body">
-                        <table class="table table-hover table-striped">
-                            <thead>
-                                <tr>
-                                    <th>No.</th>
-                                    <th>Name</th>
-                                    <th>Addr</th>
-                                    <th>Phone</th>
-                                </tr>
-                            </thead>
-                            {% for i in sinsa_page_obj %}
-                            <tbody>
-                                <tr>
-                                    <!--column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.-->
-                                    <th>{{ i.column1|add:1 }}</th>
-                                    <th>
-                                        {% if i.urls != "#none" %}
-                                        <a href ="{{ i.urls }}">{{ i.name }}</a>
-                                        {% else %}
-                                        <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>
-                                        {% endif %}
-                                    </th>
-                                    <th>{{ i.addr1 }}</th>
-                                    <th>{{ i.tel }}</th>
-                                </tr>
-                            </tbody>
-                            {% endfor %}
-                        </table>
-                    </div>
-                </div>
-                <!-- 페이지네이션 -->
-                <ul class="pagination pagination-lg justify-content-center">
-                    <!--이전페이지 존재한다면-->
-                    {% if sinsa_page_obj.has_previous %}
-                    <li class="page-item">
-                        <a class="page-link" href="?page={{ sinsa_page_obj.previous_page_number}}" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
+            <!-- 페이지네이션 -->
+            <ul class="pagination pagination-lg justify-content-center">
+                <!--이전페이지 존재한다면-->
+                {% if sinsa_page_obj.has_previous %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ sinsa_page_obj.previous_page_number}}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" tabindex="-1" href="#">&laquo;</a>
+                </li>
+                {% endif %}
+                <!--페이지리스트-->
+                <!--페이지 범위를 하나씩 리턴-->
+                {% for data in sinsa_page_obj.paginator.page_range %}
+                    <!-- nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 -->
+                    {% if data == sinsa_page_obj.number %}
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="?page={{ data }}">{{ data }}</a>
                     </li>
                     {% else %}
-                    <li class="page-item disabled">
-                        <a class="page-link" tabindex="-1" href="#">&laquo;</a>
-                    </li>
-                    {% endif %}
-                    <!--페이지리스트-->
-                    <!--페이지 범위를 하나씩 리턴-->
-                    {% for data in sinsa_page_obj.paginator.page_range %}
-                        <!-- nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 -->
-                        {% if data == sinsa_page_obj.number %}
-                        <li class="page-item active" aria-current="page">
-                            <a class="page-link" href="?page={{ data }}">{{ data }}</a>
-                        </li>
-                        {% else %}
-                        <li class="page-item">
-                            <a class="page-link" href="?page={{ data }}">{{ data }}</a>
-                        </li>
-                        {% endif %}
-                    {% endfor %}
-                    <!--다음페이지-->
-                    {% if sinsa_page_obj.has_next %}
                     <li class="page-item">
-                        <a class="page-link" href="?page={{ sinsa_page_obj.next_page_number }}">&raquo;</a>
-                    </li>
-                    {% else %}
-                    <li class="page-item disabled">
-                        <a class="page-link" tabindex="-1" href="#">&raquo;</a>
+                        <a class="page-link" href="?page={{ data }}">{{ data }}</a>
                     </li>
                     {% endif %}
-                </ul>
-            </div>
-        </main>
-
-
-        <!-- Footer-->
-           {% include "footer.html" %}
-        <!-- Core theme JS-->
-        <!-- 기능을 몰라 일단 주석처리합니다 -->
-        <script src="js/scripts.js"></script>
+                {% endfor %}
+                <!--다음페이지-->
+                {% if sinsa_page_obj.has_next %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ sinsa_page_obj.next_page_number }}">&raquo;</a>
+                </li>
+                {% else %}
+                <li class="page-item disabled">
+                    <a class="page-link" tabindex="-1" href="#">&raquo;</a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+    </main>
+    <!-- Footer-->
+   {% include "footer.html" %}
     </body>
 </html>
