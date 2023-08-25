@@ -14,7 +14,7 @@
             <script src="https://kit.fontawesome.com/cfeddde540.js" crossorigin="anonymous"></script>
             <title>논현</title>
     </head>
-<body style="background-color:Snow">
+<body style="background-color:White">
         <!-- Navigation-->
         <!-- Navigation : 네비게이션 바!-->
         {% include "navbar.html" %}
@@ -106,25 +106,25 @@
 							<th>Phone</th>
 						</tr>
 					</thead>
-<!--                    {% for i in nonhyeon_page_obj %}-->
-<!--                    <thead>-->
-<!--                        <tr>-->
-<!--                            &lt;!&ndash;column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.&ndash;&gt;-->
-<!--                            <th>{{ i.column1|add:1 }}</th>-->
-<!--                            {% if i.urls != '#none' %}-->
-<!--                            <th>-->
-<!--                                <a href="{{ i.urls }}">{{ i.name }}</a>-->
-<!--                            </th>-->
-<!--                            {% else %}-->
-<!--                            <th>-->
-<!--                                <a href="{% url 'reservation_page' %}">{{ i.name}}</a>-->
-<!--                            </th>-->
-<!--                            {% endif %}-->
-<!--                            <th>{{ i.addr1 }}</th>-->
-<!--                            <th>{{ i.tel }}</th>-->
-<!--                        </tr>-->
-<!--                    </thead>-->
-<!--                    {% endfor %}-->
+                    {% for i in nonhyeon_page_obj %}
+                    <thead>
+                        <tr>
+                            <!--column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.-->
+                            <th>{{ i.column1|add:1 }}</th>
+                            {% if i.urls != '#none' %}
+                            <th>
+                                <a href="{{ i.urls }}">{{ i.name }}</a>
+                            </th>
+                            {% else %}
+                            <th>
+                                <a href="{% url 'reservation_page' %}">{{ i.name}}</a>
+                            </th>
+                            {% endif %}
+                            <th>{{ i.addr1 }}</th>
+                            <th>{{ i.tel }}</th>
+                        </tr>
+                    </thead>
+                    {% endfor %}
 				</table>
 			</div>
 		</div>

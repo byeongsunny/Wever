@@ -12,7 +12,7 @@
             <title>삼성</title>
     </head>
 
-<body style="background-color:Snow">
+<body style="background-color:White">
         <!-- Navigation-->
         <!-- Navigation : 네비게이션 바!-->
         {% include "navbar.html" %}
@@ -108,63 +108,63 @@
 							<th>Phone</th>
 						</tr>
 					</thead>
-<!--                    {% for i in samsung_page_obj %}-->
-<!--                    <tbody>-->
-<!--                        &lt;!&ndash;column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.&ndash;&gt;-->
-<!--                            <th>{{ i.column1|add:1 }}</th>-->
-<!--                            <th>-->
-<!--                                {% if i.urls != '#none' %}-->
-<!--                                <a href ="{{ i.urls }}">{{ i.name }}</a>-->
-<!--                                {% else %}-->
-<!--                                <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>-->
-<!--                                {% endif %}-->
-<!--                            </th>-->
-<!--                            <th>{{ i.addr1 }}</th>-->
-<!--                            <th>{{ i.tel }}</th>-->
-<!--                        </tr>-->
-<!--                    </tbody>-->
-<!--                    {% endfor %}-->
-<!--				</table>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--        &lt;!&ndash; 페이지네이션 &ndash;&gt;-->
-<!--        <ul class="pagination pagination-lg justify-content-center">-->
-<!--            &lt;!&ndash;이전페이지 존재한다면&ndash;&gt;-->
-<!--            {% if samsung_page_obj.has_previous %}-->
-<!--            <li class="page-item">-->
-<!--                <a class="page-link" href="?page={{ samsung_page_obj.previous_page_number}}" aria-label="Previous">-->
-<!--                    <span aria-hidden="true">&laquo;</span>-->
-<!--                </a>-->
-<!--            </li>-->
-<!--            {% else %}-->
-<!--            <li class="page-item disabled">-->
-<!--                <a class="page-link" tabindex="-1" href="#">&laquo;</a>-->
-<!--            </li>-->
-<!--            {% endif %}-->
-<!--            &lt;!&ndash;페이지리스트&ndash;&gt;-->
-<!--            &lt;!&ndash;페이지 범위를 하나씩 리턴&ndash;&gt;-->
-<!--            {% for data in samsung_page_obj.paginator.page_range %}-->
-<!--                &lt;!&ndash; nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 &ndash;&gt;-->
-<!--                {% if data == samsung_page_obj.number %}-->
-<!--                <li class="page-item active" aria-current="page">-->
-<!--                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>-->
-<!--                </li>-->
-<!--                {% else %}-->
-<!--                <li class="page-item">-->
-<!--                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>-->
-<!--                </li>-->
-<!--                {% endif %}-->
-<!--            {% endfor %}-->
-<!--            &lt;!&ndash;다음페이지&ndash;&gt;-->
-<!--            {% if samsung_page_obj.has_next %}-->
-<!--            <li class="page-item">-->
-<!--                <a class="page-link" href="?page={{ samsung_page_obj.next_page_number }}">&raquo;</a>-->
-<!--            </li>-->
-<!--            {% else %}-->
-<!--            <li class="page-item disabled">-->
-<!--                <a class="page-link" tabindex="-1" href="#">&raquo;</a>-->
-<!--            </li>-->
-<!--            {% endif %}-->
+                    {% for i in samsung_page_obj %}
+                    <tbody>
+                        <!--column1은 0부터 시작하므로 mathfilters의 기능을 이용해서 +1을 만들어주었다.-->
+                            <th>{{ i.column1|add:1 }}</th>
+                            <th>
+                                {% if i.urls != '#none' %}
+                                <a href ="{{ i.urls }}">{{ i.name }}</a>
+                                {% else %}
+                                <a href ="{% url 'reservation_page' %}">{{ i.name }}</a>
+                                {% endif %}
+                            </th>
+                            <th>{{ i.addr1 }}</th>
+                            <th>{{ i.tel }}</th>
+                        </tr>
+                    </tbody>
+                    {% endfor %}
+				</table>
+			</div>
+		</div>
+        <!-- 페이지네이션 -->
+        <ul class="pagination pagination-lg justify-content-center">
+            <!--이전페이지 존재한다면-->
+            {% if samsung_page_obj.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ samsung_page_obj.previous_page_number}}" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" tabindex="-1" href="#">&laquo;</a>
+            </li>
+            {% endif %}
+            <!--페이지리스트-->
+            <!--페이지 범위를 하나씩 리턴-->
+            {% for data in samsung_page_obj.paginator.page_range %}
+                <!-- nonhyeon_page_obj의 페이지 범위와 현재 페이지 숫자가 같다면 -->
+                {% if data == samsung_page_obj.number %}
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>
+                </li>
+                {% else %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ data }}">{{ data }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            <!--다음페이지-->
+            {% if samsung_page_obj.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?page={{ samsung_page_obj.next_page_number }}">&raquo;</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" tabindex="-1" href="#">&raquo;</a>
+            </li>
+            {% endif %}
         </ul>
 	</div>
 	</main>
