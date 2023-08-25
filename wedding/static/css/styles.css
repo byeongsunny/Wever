@@ -10,6 +10,10 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -477,7 +481,17 @@ output {
 }
 
 iframe {
-  border: 0;
+    display: block;
+ iframes are inline by default
+
+    background: #000;
+    border: none;
+    Reset default border
+
+    height: 100vh;
+    Viewport-relative units
+
+    width: 100vw;
 }
 
 summary {
@@ -3743,7 +3757,7 @@ textarea.form-control-lg {
 
 .navbar {
   --bs-navbar-padding-x: 0;
-  --bs-navbar-padding-y: 0.5rem;
+  --bs-navbar-padding-y: 2rem;
   --bs-navbar-color: rgba(0, 0, 0, 0.55);
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
