@@ -36,7 +36,7 @@ def Nonhyeon_page(request):
     # request.GET으로 들어온 값 중 'page'라는 명으로 들어온 값을 가져오겠다.
     page = request.GET.get("page")
     # Paginator(분할될 객체(queryset), 페이지 당 담길 객체)
-    paginator = Paginator(nonhyeon, 20)
+    paginator = Paginator(nonhyeon, 30)
 
     #페이지를 입력하지 않고, 그냥 접속하면 PageNotAnInteger at이라는 에러가 발생한다.
     #paginator.page(page) 메소드에서 page에 숫자가 들어오길 기다리는데
@@ -68,7 +68,7 @@ def Samsung_page(request):
     # GET 방식으로 정보를 받아오는 데이터
     samsung_page = request.GET.get("page")
     # Paginator(분할될 객체, 페이지 당 담길 객체)
-    paginator = Paginator(samsung, 20)
+    paginator = Paginator(samsung, 30)
 
     try:
         # paginator.get_page() 메서드를 사용하여 해당 페이지의 데이터를 가져옵니다.
@@ -86,7 +86,7 @@ def Chungdam_page(request):
     # GET 방식으로 정보를 받아오는 데이터
     chungdam_page = request.GET.get("page")
     # Paginator(분할될 객체, 페이지 당 담길 객체)
-    paginator = Paginator(chungdam, 20)
+    paginator = Paginator(chungdam, 30)
 
     try:
         # paginator.get_page() 메서드를 사용하여 해당 페이지의 데이터를 가져옵니다.
@@ -104,7 +104,7 @@ def Sinsa_page(request):
     # GET 방식으로 정보를 받아오는 데이터
     sinsa_page= request.GET.get("page")
     # Paginator(분할될 객체, 페이지 당 담길 객체)
-    paginator = Paginator(sinsa , 20)
+    paginator = Paginator(sinsa , 30)
 
     try:
         # paginator.get_page() 메서드를 사용하여 해당 페이지의 데이터를 가져옵니다.
